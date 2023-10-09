@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Profil Saya</title>
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/originals/88/36/67/8836677fa6ab1092e7efd9e001991539.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        .header {
+            background-color: rgba(255, 192, 203, 0.8); /* Warna pink dengan tingkat transparansi (alpha) 0.8 */
+            text-align: center;
+            position: fixed; /* Menetapkan header agar tetap di atas layar */
+             width: 100%; /* Lebar header 100% dari layar */
+            top: 0; /* Header akan menempel di bagian atas layar */
+            left: 0;
+            z-index: 100; /* Menetapkan z-index untuk memastikan header ada di atas konten */
+            padding: 5px 0; /* Padding atas dan bawah untuk memberikan jarak pada header */
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: left;
+        }
+        
+        p {
+            text-align: left;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang tabel dengan transparansi */
+            border-radius: 20px; /* Sudut tumpul untuk pinggiran background tabel */
+        }
+
+        th, td {
+            padding: 2%;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        /* CSS untuk tampilan perangkat seluler */
+        @media (max-width: 767px) {
+        /* Aturan CSS untuk perangkat seluler di sini */
+        .container {
+        padding: 10px; /* Mengurangi padding pada perangkat seluler */
+        }
+
+        .profile-picture {
+        width: 100px; /* Mengurangi ukuran foto profil pada perangkat seluler */
+        height: 100px;
+        }
+
+        table {
+        font-size: 14px; /* Mengurangi ukuran font pada perangkat seluler */
+        }
+        }
+
+        /* Mengatur tombol */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff69b4; /* Warna merah muda untuk tombol */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        /* Mengatur hyperlink */
+        a {
+            color: #ff69b4; /* Warna merah muda untuk hyperlink */
+            text-decoration: none;
+        }
+
+        /* Mengatur tombol ketika dihover */
+        .button:hover {
+            background-color: #ff3385; /* Warna merah muda yang lebih terang saat tombol dihover */
+        }
+
+        .profile-picture {
+            display: block;
+            margin: 0 auto 20px; /* Memberikan margin bawah supaya tidak terlalu rapat dengan judul */
+            border-radius: 50%; /* Mengatur foto profil menjadi lingkaran */
+            width: 200px; /* Sesuaikan dengan ukuran foto profil Anda */
+            height: 200px; /* Sesuaikan dengan ukuran foto profil Anda */
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<body>
+    <div class="container">
+        <header class="header">
+                  <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#pendidikan">Pendidikan</a></li>
+                    <li><a href="#jadwal">Jadwal Kuliah</a></li>
+                    <li><a href="#aktivitas">Aktivitas</a></li>
+                </ul>
+            </header>
+
+        <img src="ftsyy.jpg" alt="Foto Profil" class="profile-picture">
+        <h1>YUSMA LANA FAUZIAH</h1>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Halo semua! Kenalin namaku Yusma Lana Fauziah mahasiswa semester 5 yang kebetulan sekarang aku berada di konsorsium Analisis 😊. Ada beberapa funfact dari aku yang pertama aku ga suka pedes hehe, aku suka banget sama bunga, suka hal hal berbau editing, kalau kalian gimana? pernah ga beli gorengan lima ngakunya gapapa padahal cape banget</p>
+        </section>
+        <section id="pendidikan">
+            <h2>Pendidikan</h2>
+            <p>TK Negeri Kuncup Bunga (2008-2009)</p>
+            <p>SD Al-Falah Darussalam (2009-2015)</p>
+            <p>SMP Avisena (2015-2018)</p>
+            <p>SMA Avisena (2018-2021)</p> 
+            <p>UINMA Fakultas Sains dan Teknologi Matematika (2021-Sekarang)</p>
+        
+        </section>
+        <section id="jadwal">
+            <h2>Jadwal Kuliah</h2>
+            <table>
+                <tr>
+                    <th>Hari</th>
+                    <th>Mata Kuliah</th>
+                    <th>Waktu</th>
+                </tr>
+                <tr>
+                    <td>Senin</td>
+                    <td>Analisis Numerik 1</td>
+                    <td>06:30 - 09:00</td>
+                </tr>
+                <tr>
+                    <td>Senin</td>
+                    <td>Pemrograman Komputer II</td>
+                    <td>09:50 - 11:30</td>
+                </tr>
+                <tr>
+                    <td>Selasa</td>
+                    <td>Statistika Matematika</td>
+                    <td>06:30 - 09:00</td>
+                </tr>
+                <tr>
+                    <td>Selasa</td>
+                    <td>Praktikum Pemrograman Komputer II</td>
+                    <td>09:00 - 10:40</td>
+                </tr>
+                <tr>
+                    <td>Selasa</td>
+                    <td>Teori Ukuran</td>
+                    <td>12:20 - 14:00</td>
+                </tr>
+                <tr>
+                    <td>Rabu</td>
+                    <td>Pemodelan Matematika</td>
+                    <td>06:30 - 08:10</td>
+                </tr>
+                <tr>
+                    <td>Rabu</td>
+                    <td>Praktikum Pemodelan Matematika</td>
+                    <td>14:00 - 15:40</td>
+                </tr>
+                <tr>
+                    <td>Kamis</td>
+                    <td>Analisis Kompleks</td>
+                    <td>09:00 - 11:30</td>
+                </tr>
+                <tr>
+                    <td>Kamis</td>
+                    <td>Kapita Selekta Analisis</td>
+                    <td>14:00 - 15:40</td>
+                </tr>
+                <tr>
+                    <td>Jum'at</td>
+                    <td>Geometri Analitik</td>
+                    <td>12:20 - 14:50</td>
+                </tr>
+            </table>
+        </section>
+        <section id="aktivitas">
+            <h2>Aktivitas</h2>
+            <table>
+                <tr>
+                    <th>Organisasi</th>
+                    <th>Jabatan</th>
+                    <th>Tahun</th>
+                </tr>
+                <tr>
+                    <td>HMPS "Integral" Matematika </td>
+                    <td>Penerbitan dan Jurnalistik</td>
+                    <td>2022-2023</td>
+                </tr>
+                <tr>
+                    <td> Art Multicurtural of Science and Technology Fair</td>
+                    <td>Anggota Divisi Cyber</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>Kompetisi Matematika</td>
+                    <td> Content creative and media publication </td>
+                    <td>2021-2023 </td>
+                </tr>
+
+                <tr>
+                    <td>Dimas Nimas Saintek  </td>
+                    <td>Publikasi, dekorasi, dan dokumentasi</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>Matematika Angkatan 2021</td>
+                    <td>Ketua Divisi Kreasi</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>Studi Integratif Mahasiswa Matematika</td>
+                    <td>CO-Anggota Divisi Publikasi, dekorasi, dan dokumentasi</td>
+                    <td>2022-2023</td>
+                </tr>
+                <tr>
+                    <td>Peringatan Hari Besar Islam HMPS "Integral" Matematika </td>
+                    <td>CO Divisi Publikasi, dekorasi, dan dokumentasi</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>Study Club HMPS "Integral" Matematika </td>
+                    <td>CO Divisi Publikasi, dekorasi, dan dokumentasi</td>
+                    <td>2022</td>
+                </tr>
+            </table>
+        </section>
+        <!-- Tambahkan hyperlink dan tombol ke link tertentu di sini -->
+        <a href="https://youtu.be/viimfQi_pUw?si=8ayD3gqH2hR4N3tv" class="button">Lagu Favorit Akuu</a>
+        <a href="https://instagram.com/yusma.lana?igshid=OGQ5ZDc2ODk2ZA==" class="button">Instagram Akuu</a>
+        <a href="https://i.pinimg.com/originals/81/da/2e/81da2eaac94aabbf40bb9fb6259fb5a0.jpg" class="button">Makanan Fav Nii</a>
+    </div>
+</body>
+</html>
